@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owl Carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Set up your HTML -->
+    <div class="owl-carousel">
+      <!--Colleague 1-->
+      <div class="slider">
+        <img src="./images/ceo.jpg" alt="Photo of the CEO" class="images" />
+        <div class="testimonial">
+          <h1>Michael Sky</h1>
+          <h2>CEO</h2>
+          <q
+            >The CEO is the top operational decision-maker at a company, while
+            the Chairperson of the Board is responsible for protecting the
+            investors’ interests and for overseeing the company as a whole. The
+            Board of Directors usually meets several times a year to set the
+            company’s long-term goals, review financial results, evaluate the
+            performance of executives and managers, and vote on strategic
+            decisions proposed by the chief executive.</q
+          >
+        </div>
+      </div>
+      <!--Colleague 2-->
+      <div class="slider">
+        <img
+          src="./images/director.jpg"
+          alt="Photo of the director"
+          class="images"
+        />
+        <div class="testimonial">
+          <h1>Lisa Green</h1>
+          <h2>Director</h2>
+          <q
+            >Essentially, a company director is chosen by a limited company to
+            manage its daily business activities and finances, and to make sure
+            every legal filing requirement is met, A company director is
+            required to operate honestly and lawfully, and make verdicts for the
+            good of the company as well its members (shareholders). He or she
+            can bind the company into valid contracts with third-parties
+            (buyers, lenders, suppliers etc) and act as trustees for a company
+            but not the individual stockholders. With sound judgement and
+            experience, a company director should thrive to make a company
+            successful by promoting and achieving its business goals.</q
+          >
+        </div>
+      </div>
+
+      <!--Colleague 3-->
+
+      <div class="slider">
+        <img
+          src="./images/Executive.jpg"
+          alt="Photo of the executive"
+          class="images"
+        />
+        <div class="testimonial">
+          <h1>Lona Maseko</h1>
+          <h2>Executive</h2>
+          <q>
+            An executive directs, plans, and coordinates operational activities
+            for their organization or company and are normally responsible for
+            devising policies and strategies to meet company goals. Executives
+            often travel to attend meetings and conferences and visit regional,
+            local, national, or international offices.</q
+          >
+        </div>
+      </div>
+      <!--Colleague 4-->
+      <div class="slider">
+        <img
+          src="./images/intern.jpeg"
+          alt="Photo of the intern"
+          class="images"
+        />
+        <div class="testimonial"></div>
+          <h1>Marl Laura</h1>
+          <h2>Intern</h2>
+          <q
+            >An intern is a trainee who has signed on with an organisation for a
+            brief period. An intern’s goal is to gain work experience,
+            occasionally some university credit, and always an overall feel for
+            the industry they’re interning in.
+          </q>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script tags under here -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+
+          margin: 50,
+
+          loop: true,
+
+          stagePadding: 100,
+
+          dots: false,
+
+          autoplay: true,
+        });
+      });
+    </script>
+  </body>
+</html>
